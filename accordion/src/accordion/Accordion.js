@@ -4,14 +4,14 @@ import './Accordion.css';
 import uparrow from '../images/arrow_up_icon.png';
 import downarrow from '../images/arrow_down_icon.png';
 
-function Accordion({ children }) {
+function Accordion({ text, children }) {
 
     const [expanded, setExpanded] = useState(false);
 
     return (
         <div className="accordion">
             <div className="header">
-                <h3 className="text">A new way to show accordion</h3>
+                <h3 className="text">{ text }</h3>
                 { !expanded && 
                     <img className="arrow" alt="down arrow" src={ downarrow } onClick={() => setExpanded(!expanded)} /> 
                 } 
