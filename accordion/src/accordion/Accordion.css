@@ -1,0 +1,35 @@
+.accordion {
+    width: 500px;     
+    border: 1px solid #606c38;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.header {
+    background-color: #bc6c25;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.text {
+    margin: 0;
+    color: #fefae0;
+    font-size: 1.25rem;
+}
+.arrow {
+    height: 1rem;
+    cursor: pointer;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefae0;
+    padding: 0;
+    overflow: hidden;
+    height: 0px;    
+    transition: height 0.5s ease-in;
+}
+.content-shown {
+    height: 100px;
+    padding: 10px;
+}
